@@ -1,0 +1,147 @@
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.notes-table {
+  margin: 0 auto;
+  width: 100vw;
+}
+
+td {
+  width: 33.3333333333%;
+  text-align: center;
+}
+
+tr {
+  border-bottom: thin solid #ddd;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.access-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 275px;
+  width: 300px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px #ddd;
+}
+
+.access-form input[type='text'],
+input[type='email'],
+input[type='password'] {
+  margin-bottom: 0.5rem;
+}
+
+.access-form input[type='submit'] {
+  margin-top: 0.5rem;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+textarea {
+  border: thin solid #dedede;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin: 5px;
+  outline: none;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  background-color: transparent;
+}
+
+.btn,
+button,
+input[type='submit'] {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+  margin: 0px 5px;
+}
+
+button:hover,
+input[type='submit']:hover {
+  color: #fff;
+  background-color: #1c1f23;
+  border-color: #1a1e21;
+}
+
+button:checked,
+input[type='submit']:checked {
+  color: #fff;
+  background-color: #1a1e21;
+  border-color: #191c1f;
+}
+
+button:focus,
+input[type='submit']:focus {
+  box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+}
+
+.btn-edit {
+  background-color: #09f;
+  border-color: #09f;
+}
+
+.btn-edit:hover {
+  background-color: rgba(0, 153, 255, 0.75);
+  border-color: rgba(0, 153, 255, 0.75);
+}
+
+.btn-edit:checked {
+  background-color: rgba(0, 153, 255, 0.75);
+  border-color: rgba(0, 153, 255, 0.75);
+}
+
+.btn-edit:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 153, 255, 0.5);
+}
+
+.btn-delete {
+  background-color: rgb(228, 86, 86);
+  border-color: rgb(228, 86, 86);
+}
+
+.btn-delete:hover {
+  background-color: rgb(228, 86, 86, 0.75);
+  border-color: rgb(228, 86, 86, 0.75);
+}
+
+.btn-delete:checked {
+  background-color: rgb(228, 86, 86, 0.75);
+  border-color: rgb(228, 86, 86, 0.75);
+}
+
+.btn-delete:focus {
+  box-shadow: 0 0 0 0.2rem rgb(228, 86, 86, 0.5);
+}
