@@ -6,6 +6,7 @@ import '../styles/Notes.css'
 // Components
 import NotesForm from './NotesForm'
 import NotesTable from './NotesTable'
+import DeleteNoteModal from './DeleteNoteModal'
 
 const initialDb = []
 
@@ -24,7 +25,8 @@ const NotesApp = () => {
   }
 
   const deleteData = id => {
-    let isDelete = window.confirm(`¿Estás seguro de eliminar el registro con el id '${id}'?`)
+    let title = db.find(el => el.id === id).title
+    let isDelete = window.confirm(`¿Estás seguro de eliminar la nota con el titulo: "${title}"?`)
 
     if (isDelete) {
       let newData = db.filter(el => el.id !== id)
@@ -52,6 +54,7 @@ const NotesApp = () => {
         setDataToEdit={setDataToEdit}
       />
       <NotesTable data={db} setDataToEdit={setDataToEdit} deleteData={deleteData} />
+      {/* <DeleteNoteModal data={db} /> */}
     </div>
   )
 }
